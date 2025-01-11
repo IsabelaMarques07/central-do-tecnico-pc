@@ -466,7 +466,7 @@ header {
 .lista-beneficios {
     text-align: left;
     font-weight: 500;
-    font-size: larger;
+    font-size: 0.9rem;
 }
 
 .lista-beneficios i{
@@ -492,6 +492,16 @@ header {
     border: 1px solid rgba(103, 95, 129, 0.466);
     color: var(--secondary-color);
     background-color: transparent;
+    height: calc(60% / 2);
+    padding: 10px
+}
+
+.col-md-6.d-flex.flex-column .card:first-child {
+    height: 40%;
+}
+
+.card-linha .card-body{
+    font-size: 0.9rem;
 }
 
 .card-linha-1{
@@ -808,6 +818,12 @@ footer a{
     color: #141414;
     border: none;
     font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    background-color: #12612f; /* WhatsApp green color */
 }
 
 @media (max-width: 768px) {
